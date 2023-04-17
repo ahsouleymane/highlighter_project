@@ -19,11 +19,12 @@ def acceuil(request):
         # Enlever toute les espaces dans la chaine
         highlight = highlight.strip()
 
-        # Convertion de la chaine de caractere en liste
+        """ Convertion de la chaine de caractere en liste
+        avec la fonction json.loads() """
         highlight = json.loads(highlight)
 
-        """ Découpage de la chaine en trois parties et convertion de 
-        ces parties en dictionnaire avec la fonction json.loads() """    
+        """ Découpage de la liste en trois parties formant 
+        des dictionnaires de données  """    
         liste_foo = highlight[0]
         liste_bar = highlight[1]
         liste_baz = highlight[2]
@@ -32,8 +33,8 @@ def acceuil(request):
         print(liste_bar)
         print(liste_baz)
 
-        """ Affectation des valeurs à value_start_foo, value_end_foo, value_comment_foo 
-        à travers les clés start, end, comment contenue dans la chaine """
+        """ Affectation des valeurs à value_start_***, value_end_***, value_comment_*** 
+        à travers les clés start, end, comment contenue dans le dictionnaire  """
         value_start_foo = liste_foo["start"]
         value_end_foo = liste_foo["end"]
         value_comment_foo = liste_foo["comment"]
@@ -68,6 +69,7 @@ def acceuil(request):
         print(text_bar) 
         print(text_baz)
 
+        # Insertion des bouts de text dans des dictionnaires
         text_dict_1 = {"1": text_foo}
         text_dict_2 = {"2": text_bar}
         text_dict_3 = {"3": text_baz}
