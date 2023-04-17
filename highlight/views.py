@@ -60,9 +60,9 @@ def acceuil(request):
 
         """ Affectation d'une partie de la chaine à text_*** allant de l'index 
         value_start_*** à value_end_*** dans la chaine content """
-        text_foo = content[value_start_foo: value_end_foo]
-        text_bar = content[value_start_bar: value_end_bar]
-        text_baz = content[value_start_baz: value_end_baz]
+        text_foo = content[value_start_foo: value_end_foo + 1]
+        text_bar = content[value_start_bar: value_end_bar + 1]
+        text_baz = content[value_start_baz: value_end_baz + 1]
 
         print(text_foo)  
         print(text_bar) 
