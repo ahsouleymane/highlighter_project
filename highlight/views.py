@@ -93,6 +93,43 @@ def acceuil(request):
         print(text_cont_3_dict)
         print(text_cont_4_dict)
 
+        find_text_bar_in_text_foo = text_foo.find(text_bar)
+        print(find_text_bar_in_text_foo)
+        if find_text_bar_in_text_foo != -1:
+            text_foo_1 = text_foo[:value_start_bar]
+            text_foo_2 = text_foo[value_end_bar:]
+
+        find_text_baz_in_text_foo = text_foo.find(text_baz)
+        print(find_text_baz_in_text_foo)
+        if find_text_baz_in_text_foo != -1:
+            text_foo_3 = text_foo[:value_start_baz]
+            text_foo_4 = text_foo[value_end_baz:]
+
+        find_text_foo_in_text_bar = text_bar.find(text_foo)
+        print(find_text_foo_in_text_bar)
+        if find_text_foo_in_text_bar != -1:
+            text_bar_1 = text_bar[:value_start_foo]
+            text_bar_2 = text_bar[value_end_foo:]
+
+        find_text_baz_in_text_bar = text_bar.find(text_baz)
+        print(find_text_baz_in_text_bar)
+        if find_text_baz_in_text_bar != -1:
+            text_bar_3 = text_bar[:value_start_baz]
+            text_bar_4 = text_bar[value_end_baz:]
+
+        find_text_foo_in_text_baz = text_baz.find(text_foo)
+        print(find_text_foo_in_text_baz)
+        if find_text_foo_in_text_baz != -1:
+            text_baz_1 = text_baz[:value_start_foo]
+            text_baz_2 = text_baz[value_end_foo:]
+
+        find_text_bar_in_text_baz = text_baz.find(text_bar)
+        print(find_text_bar_in_text_baz)
+        if find_text_bar_in_text_baz != -1:
+            text_baz_4 = text_baz[:value_start_bar]
+            text_baz_5 = text_baz[value_end_bar:]
+
+
         #text_dict = {"1": text_cont_1, "1": text_foo, "2": text_cont_2, "2": text_bar, "3": text_cont_3, "3": text_baz, "4": text_cont_4}
 
         data = {
